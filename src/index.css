@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white;
+  }
+
+  .inner-html {
+    @apply text-base text-slate-700;
+  }
+
+  .inner-html.small-text {
+    @apply text-sm;
+  }
+
+  .inner-html h1 {
+    @apply mb-2 text-2xl font-bold;
+  }
+
+  .inner-html.small-text h1 {
+    @apply text-xl;
+  }
+
+  .inner-html h2 {
+    @apply mb-2 text-xl font-bold;
+  }
+
+  .inner-html.small-text h2 {
+    @apply text-lg;
+  }
+
+  .inner-html h3 {
+    @apply mb-2 text-lg font-bold;
+  }
+
+  .inner-html.small-text h3 {
+    @apply text-base;
+  }
+
+  .inner-html h4 {
+    @apply mb-2 text-base font-bold;
+  }
+
+  .inner-html.small-text h4 {
+    @apply text-sm;
+  }
+
+  .inner-html h5 {
+    @apply mb-2 text-sm font-bold;
+  }
+
+  .inner-html.small-text h5 {
+    @apply text-xs;
+  }
+
+  .inner-html h6 {
+    @apply mb-2 text-xs font-bold;
+  }
+
+  .inner-html.small-text h6 {
+    @apply text-[0.5rem];
+  }
+
+  .inner-html p {
+    @apply mb-6 leading-7;
+  }
+
+  .inner-html img {
+    @apply !mb-6;
+  }
+
+  .inner-html pre {
+    max-width: 100%;
+    overflow-x: auto;
+    @apply my-6 border border-slate-300 bg-slate-100 p-4 font-mono text-sm text-slate-700 sm:p-6;
+  }
+
+  .inner-html blockquote {
+    @apply mb-6 border-l border-slate-300 bg-slate-100 p-4 text-slate-700 sm:p-6;
+  }
+
+  .inner-html a {
+    @apply text-sky-600;
+  }
+
+  .inner-html kbd {
+    @apply border border-slate-300 px-2 py-1 font-mono text-xs font-semibold;
+  }
+}

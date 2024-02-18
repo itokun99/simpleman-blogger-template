@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:js='false' b:layoutsVersion='3' expr:dir='data:blog.languageDirection' expr:lang='data:blog.locale' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head>
+    <meta expr:charset='data:blog.encoding'/>
+    <meta content='width=device-width,initial-scale=1' name='viewport'/>
+    <title>
+      <data:view.title.escaped/>
+    </title>
+    <meta expr:content='data:view.description.escaped' name='description'/>
+    <link expr:href='data:view.url.canonical' rel='canonical'/>
+    <link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
+    
+    <!-- INCLUDE TAG -->
+<include expiration='7d' path='*.css'/>
+<include expiration='7d' path='*.js'/>
+<include expiration='3d' path='*.gif'/>
+<include expiration='3d' path='*.jpeg'/>
+<include expiration='3d' path='*.jpg'/>
+<include expiration='3d' path='*.png'/>
+
+<!-- LINK TAG -->
+<link href='http://www.blogger.com/openid-server.g' rel='openid.server'/>
+<!-- <link href='https://plus.google.com/xxxxxx/about' rel='publisher'/>
+<link href='https://plus.google.com/xxxxxx/about' rel='author'/>
+<link href='https://plus.google.com/xxxxxx' rel='me'/> -->
+<link expr:href='data:blog.url' hreflang='x-default' rel='alternate'/>
+<link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default&quot;' expr:title='data:blog.title + &quot;- Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link expr:href='data:blog.homepageUrl + &quot;feeds/posts/default?alt=rss&quot;' expr:title='data:blog.title + &quot;- RSS&quot;' rel='alternate' type='application/rss+xml'/>
+<link expr:href='&quot;https://www.blogger.com/feeds/&quot; + data:blog.blogId + &quot;/posts/default&quot;' expr:title='data:blog.title + &quot;- Atom&quot;' rel='alternate' type='application/atom+xml'/>
+<link expr:href='data:blog.homepageUrl' rel='openid.delegate'/>
+<link expr:href='data:view.url.canonical' rel='canonical'/>
+<link href='//ajax.googleapis.com' rel='dns-prefetch'/>
+<link href='//www.google-analytics.com' rel='dns-prefetch'/>
+<link href='//maxcdn.bootstrapcdn.com' rel='dns-prefetch'/>
+<link href='//resources.blogblog.com' rel='dns-prefetch'/>
+<link href='//fonts.googleapis.com' rel='dns-prefetch'/>
+<link href='//1.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//2.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//3.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//4.bp.blogspot.com' rel='dns-prefetch'/>
+<link href='//disqus.com' rel='dns-prefetch'/>
+<link href='//github.com' rel='dns-prefetch'/>
+<link href='//cdn.rawgit.com' rel='dns-prefetch'/>
+<link href='//fontawesome.com' rel='dns-prefetch'/>
+<link href='//addthis.com' rel='dns-prefetch'/>
+
+
+
+<!-- META TAG -->
+<meta content='XXXXX' name='google-site-verification'/>
+<meta content='XXXXX' name='msvalidate.01'/>
+<meta content='XXXXX' name='yandex-verification'/>
+<meta content='Indonesia' name='geo.placename'/>
+<meta content='Code Pelajar' name='Author'/>
+<meta content='general' name='rating'/>
+<meta content='id' name='geo.country'/>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<meta content='blogger' name='generator'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='unsafe-url' name='referrer'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<meta expr:charset='data:blog.encoding'/>
+<meta expr:content='data:view.isHomepage ? &quot;website&quot; : &quot;article&quot;' property='og:type'/>
+<meta expr:content='data:blog.title' name='application-name'/>
+<meta expr:content='data:blog.title' property='og:site_name'/>
+<meta expr:content='data:view.url.canonical' property='og:url'/>
+
+<meta content='XXXXX' property='article:author'/>
+<meta content='XXXXX' property='article:publisher'/>
+<meta content='xxxxxxxx' property='fb:app_id'/>
+<meta content='xxxxxxxx' property='fb:admins'/>
+<meta content='en_US' property='og:locale:alternate'/>
+<meta content='id_ID' property='og:locale'/>
+<meta content='xxxxxxxx' name='twitter:site'/>
+<meta content='xxxxxxxx' name='twitter:creator'/>
+<meta content='xxxxxxxx' name='twitter:card'/>
+
+
+
+<b:if cond='data:view.description'>
+   <meta expr:content='data:view.description.escaped' property='og:description'/>
+   <meta expr:content='data:view.description.escaped' name='description'/>
+</b:if>
+
+<b:if cond='data:view.isError or data:view.isArchive or data:view.isSearch'>
+   <meta content='noindex,follow' name='robots'/>
+</b:if>
+
+<b:if cond='data:widgets'>
+   <b:loop values='data:widgets.Blog.first.posts where (p =&gt; p.featuredImage) map (p =&gt; p.featuredImage)' var='imageUrl'>
+     <meta expr:content='resizeImage(data:imageUrl,1200,&quot;1200:630&quot;)' property='og:image'/>
+   </b:loop>
+   <meta content='1200' property='og:image:width'/>
+   <meta content='630' property='og:image:height'/>
+</b:if>
+
+<b:with value='data:view.isError ? data:messages.theresNothingHere : data:view.title.escaped' var='title'>
+   <meta expr:content='data:title' property='og:title'/>
+   <meta expr:content='data:title' name='twitter:title'/>
+   <title><data:title/></title>
+</b:with>
+
+<b:if cond='data:blog.feedLinks'>
+  <b:with value='path(data:blog.homepageUrl.canonical,&quot;feeds/posts/default&quot;)' var='feeds'>
+    <link expr:href='data:feeds' rel='alternate' title='Atom 1.0' type='application/atom+xml'/>
+    <link expr:href='data:feeds params {alt: &quot;rss&quot;}' rel='alternate' title='RSS 2.0' type='application/rss+xml'/>
+  </b:with>
+</b:if>
+
+<b:if cond='data:widgets.AdSense.first or data:blog.adsenseClientId'>
+   <script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'/>
+</b:if>
+
+<script type='application/ld+json'>
+{
+    &quot;@context&quot;: &quot;http://schema.org&quot;,
+    &quot;@type&quot;: &quot;WebSite&quot;,
+    &quot;url&quot;: &quot;<data:blog.homepageUrl.canonical/>&quot;,
+    &quot;potentialAction&quot;: {
+        &quot;@type&quot;: &quot;SearchAction&quot;,
+        &quot;target&quot;: &quot;<data:blog.url/>?q={search_term_string}&quot;,
+        &quot;query-input&quot;: &quot;required name=search_term_string&quot;
+    }
+}
+</script>
+    
+    
+<link href='https://raw.githack.com/itokun99/react-template-blogger/main/dist/assets/index.css' rel='stylesheet'/>
+
+
+    <b:if cond='data:view.isLayoutMode'>
+      <b:skin><![CDATA[
+      ]]></b:skin>
+    </b:if>
+    <style>/*                        <![CDATA[*//*! main.css *//*]]>*/
+    </style>
+    <b:defaultmarkups>
+      <b:defaultmarkup type='All'>
+        <b:includable id='main'/>
+        <b:includable id='content'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='AdSense,Blog'>
+        <b:includable id='defaultAdUnit'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Blog,PopularPosts,FeaturedPost'>
+        <b:includable id='blogThisShare'/>
+        <b:includable id='bylineByName'/>
+        <b:includable id='bylineRegion'/>
+        <b:includable id='commentsLink'/>
+        <b:includable id='commentsLinkIframe'/>
+        <b:includable id='emailPostIcon'/>
+        <b:includable id='facebookShare'/>
+        <b:includable id='footerBylines'/>
+        <b:includable id='headerByline'/>
+        <b:includable id='googlePlusShare'/>
+        <b:includable id='linkShare'/>
+        <b:includable id='otherSharingButton'/>
+        <b:includable id='platformShare'/>
+        <b:includable id='postAuthor'/>
+        <b:includable id='postCommentsLink'/>
+        <b:includable id='postJumpLink'/>
+        <b:includable id='postLabels'/>
+        <b:includable id='postLocation'/>
+        <b:includable id='postReactions'/>
+        <b:includable id='postShareButtons'/>
+        <b:includable id='postTimestamp'/>
+        <b:includable id='sharingButton'/>
+        <b:includable id='sharingButtonContent'/>
+        <b:includable id='sharingButtons'/>
+        <b:includable id='sharingButtonsMenu'/>
+        <b:includable id='sharingPlatformIcon'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='PopularPosts,FeaturedPost'>
+        <b:includable id='snippetedPostByline'/>
+        <b:includable id='snippetedPostContent'/>
+        <b:includable id='snippetedPosts'/>
+        <b:includable id='snippetedPostThumbnail'/>
+        <b:includable id='snippetedPostTitle'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Blog'>
+        <b:includable id='aboutPostAuthor'/>
+        <b:includable id='addComments'/>
+        <b:includable id='commentAuthorAvatar'/>
+        <b:includable id='commentDeleteIcon'/>
+        <b:includable id='commentForm'/>
+        <b:includable id='commentFormIframeSrc'/>
+        <b:includable id='commentItem'/>
+        <b:includable id='commentList'/>
+        <b:includable id='commentPicker'/>
+        <b:includable id='comments'/>
+        <b:includable id='commentsTitle'/>
+        <b:includable id='feedLinks'/>
+        <b:includable id='feedLinksBody'/>
+        <b:includable id='homePageLink'/>
+        <b:includable id='iframeComments'/>
+        <b:includable id='inlineAd'/>
+        <b:includable id='manageComments'/>
+        <b:includable id='nextPageLink'/>
+        <b:includable id='post'/>
+        <b:includable id='postBody'/>
+        <b:includable id='postBodySnippet'/>
+        <b:includable id='postCommentsAndAd'/>
+        <b:includable id='postFooter'/>
+        <b:includable id='postFooterAuthorProfile'/>
+        <b:includable id='postHeader'/>
+        <b:includable id='postMeta'/>
+        <b:includable id='postMetadataJSONImage'/>
+        <b:includable id='postMetadataJSONPublisher'/>
+        <b:includable id='postPagination'/>
+        <b:includable id='postTitle'/>
+        <b:includable id='previousPageLink'/>
+        <b:includable id='threadedCommentForm'/>
+        <b:includable id='threadedCommentJs'/>
+        <b:includable id='threadedComments'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='BlogArchive'>
+        <b:includable id='flat'/>
+        <b:includable id='hierarchy'/>
+        <b:includable id='interval'/>
+        <b:includable id='posts'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='BlogSearch'>
+        <b:includable id='searchForm'/>
+        <b:includable id='searchSubmit'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Header'>
+        <b:includable id='behindImageStyle'/>
+        <b:includable id='description'/>
+        <b:includable id='image'/>
+        <b:includable id='title'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Label'>
+        <b:includable id='cloud'/>
+        <b:includable id='list'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='PageList'>
+        <b:includable id='overflowButton'/>
+        <b:includable id='overflowablePageList'/>
+        <b:includable id='pageLink'/>
+        <b:includable id='pageList'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Profile'>
+        <b:includable id='authorProfileImage'/>
+        <b:includable id='defaultProfileImage'/>
+        <b:includable id='profileImage'/>
+        <b:includable id='teamProfile'/>
+        <b:includable id='teamProfileLink'/>
+        <b:includable id='userGoogleProfile'/>
+        <b:includable id='userLocation'/>
+        <b:includable id='userProfile'/>
+        <b:includable id='userProfileData'/>
+        <b:includable id='userProfileImage'/>
+        <b:includable id='userProfileInfo'/>
+        <b:includable id='userProfileLink'/>
+        <b:includable id='userProfileText'/>
+        <b:includable id='viewProfileLink'/>
+      </b:defaultmarkup>
+      <b:defaultmarkup type='Subscribe'>
+        <b:includable id='feeds'/>
+      </b:defaultmarkup>
+    </b:defaultmarkups>
+  </head>
+  <body>
+    <b:if cond='data:view.isLayoutMode'>
+      <b:section id='main'/>
+    </b:if>
+          <div data-config-url='https://raw.githubusercontent.com/itokun99/itokun99/main/react-template-blogger/configs/3190947245348881579/config.json' data-is-blogger='true' id='root'/>
+    <script crossorigin='' src='https://raw.githack.com/itokun99/react-template-blogger/main/dist/assets/index.js' type='module'/>
+  </body>
+</html>
